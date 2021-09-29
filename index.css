@@ -207,8 +207,6 @@ ul {
     margin-right: 10px;
 }
 
-
-
 .img-group {
     height: 38vh;
     position: relative;
@@ -406,8 +404,294 @@ footer h5 {
 
 /* ***Media queries**** */
 
-@media screen and (min-witdh:768px) {
-    .get-started-btn{
+@media screen and (min-width:768px) {
+
+    .filmatch-app-container h3{
+        font-size: 36px;
+    }
+
+    .filmatch-app-container p{
+        font-size: 26px;
+    }
+
+    .filmatch-app-container button{
+        font-size: 36px;
+        padding: 25px;
+    }
+
+    .like-filmatch-app-container h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    
+    .like-filmatch-app-container p {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .like-filmatch-app-container button {
+        font-size: 36px;
+        padding: 25px;
+    }
+
+    .free-app-wrapper {
+        margin-top: 100px;
+        width: 760px;
+    }
+    
+    .free-app-container {
+        margin-left: 40px;
+    }
+    
+    .free-app-container h2 {
+        font-size: 52px;
+    }
+    
+    .get-app {
+        margin-top: 30px;
+    }
+    
+    .img-group {
+        height: 40vh;
+        position: relative;
+    }
+    
+    .home-img {
+        left: 50px;
+        top: 85px;
+    }
+    
+    .like-img {
+        right: 91px;
+        top: 30px;
+    }
+    
+    .ntfc-img {
+        right: -9px;
+        top: 75px;
+    }
+    
+    .get-premium-img {
+        bottom: -1px;
+        left: 112px;
+    }
+
+    .rating-content {
+        gap: 40px;
+        padding: 40px;
+    }
+    
+    .vector-download,
+    .vector-users {
+        bottom: -400px;
+    }
+    
+    .vector-reviews,
+    .vector-countries {
+        bottom: -610px;
+    }
+    
+    .rating-content h2 {
+        font-size: 32px;
+    }
+    
+    .rating-content p {
+        font-size: 34px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .reviews {
+        padding: 100px 90px;
+    }
+    
+    .reviews-header {
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+    
+    .line-1 {
+        height: 1px;
+        background: #a4a4a4;
+        width: 90%;
+    }
+    
+    .reviews-header h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .card {
+        border-radius: 10px;
+        height: 160px;
+        width: 100%;
+    }
+
+    .card-title {
+        padding: 25px 15px;
+    }
+
+    .swiper-wrapper .swiper-slide {
+        height: 180px;
+    }
         
     }
+    
+    .reviews h5 {
+        font-size: 32px;
+        line-height: 22px;
+    }
+    
+    .reviews p {
+        font-size: 26px;
+        line-height: 24px;
+        padding: 0 30px;
+    }
+    
+    .social-app{
+        margin-left: 40px;
+    }
+    
+    .get-g-ply{
+        margin-top: 5px;
+    }   
+
+
+@media screen and (max-width:1024px) {
+
+    .filmatch-app-container h3{
+        font-size: 46px;
+    }
+
+    .filmatch-app-container p{
+        font-size: 28px;
+    }
+
+    .filmatch-app-container button{
+        font-size: 38px;
+        padding: 32px;
+    }
+
+    .like-filmatch-app-container h3 {
+        font-size: 38px;
+        margin-bottom: 32px;
+        margin-top: 45px;
+    }
+    
+    .like-filmatch-app-container p {
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .like-filmatch-app-container button {
+        font-size: 39px;
+        padding: 32px;
+    }
+
+    .free-app-wrapper {
+        margin-top: 110px;
+        width: 1000px;
+    }
+    
+    .free-app-container {
+        margin-left: 60px;
+    }
+    
+    .free-app-container h2 {
+        font-size: 64px;
+    }
+    
+    .get-app {
+        margin-top: 35px;
+    }
+    
+    .img-group {
+        height: 40vh;
+        position: relative;
+    }
+    
+    .home-img {
+        left: 50px;
+        top: 85px;
+    }
+    
+    .like-img {
+        right: 91px;
+        top: 30px;
+    }
+    
+    .ntfc-img {
+        right: -9px;
+        top: 75px;
+    }
+    
+    .get-premium-img {
+        bottom: -1px;
+        left: 112px;
+    }
+
+    .rating-content {
+        gap: 50px;
+        padding: 60px;
+    }
+    
+    .vector-download,
+    .vector-users {
+        bottom: -300px;
+    }
+    
+    .vector-reviews,
+    .vector-countries {
+        bottom: -525px;
+    }
+    
+    .rating-content h2 {
+        font-size: 38px;
+    }
+
+    .reviews {
+        padding: 150px 140px;
+    }
+    
+    .reviews-header {
+        margin-bottom: 60px;
+        padding: 0 20px;
+    }
+    
+    .reviews-header h1 {
+        font-size: 42px;
+        line-height: 38px;
+    }
+
+    .card {
+        border-radius: 10px;
+        height: 160px;
+        width: 100%;
+    }
+
+    .card-title {
+        padding: 35px 25px;
+    }
+    
+    .reviews h5 {
+        font-size: 32px;
+        line-height: 22px;
+    }
+    
+    .reviews p {
+        font-size: 32px;
+        line-height: 28px;
+        padding: 0 40px;
+    }
+    
+    .social-app{
+        margin-left: 40px;
+    }
+    
+    .get-g-ply{
+        margin-top: 5px;
+    }   
 }
