@@ -707,3 +707,53 @@ footer h5 {
 }
 
 }
+
+@media screen and (min-width:400px) {
+    .rating-content {
+        gap: 20px;
+        padding: 40px;
+    }
+    
+    .vector-download,
+    .vector-users {
+        bottom: -330px;
+    }
+    
+    .vector-reviews,
+    .vector-countries {
+        bottom: -530px;
+    }
+    
+    .rating-content h2 {
+        font-size: 20px;
+    }
+    
+    .rating-content p {
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width:414px) {
+    .vector-download,
+    .vector-users {
+        bottom: -300px;
+    }
+    
+    .vector-reviews,
+    .vector-countries {
+        bottom: -490px;
+    }
+}
+
+@media screen and (min-width:411px) {
+    .vector-download,
+    .vector-users {
+        bottom: -300px;
+    }
+    
+    .vector-reviews,
+    .vector-countries {
+        bottom: -490px;
+    }
+}
