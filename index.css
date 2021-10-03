@@ -609,8 +609,6 @@ footer h5 {
         font-size: 22px;
     }
 
-
-
     .like-filmatch-app-container h3 {
         font-size: 32px;
         margin-bottom: 34px;
@@ -622,8 +620,6 @@ footer h5 {
         line-height: 18px;
         margin-bottom: 30px;
     }
-
-
 
     .free-app-wrapper {
         height: 450px;
@@ -738,13 +734,109 @@ footer h5 {
     }
 
     .filmatch-app-container p {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 18px;
+    }
+
+
+    .filmatch-app-container button{
+        width: 300px;
+        height: 70px;
     }
 
     .like-filmatch-app-container h3 {
-        font-size: 22px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 34px;
+        margin-top: 145px;
     }
 
+    .like-filmatch-app-container p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+
+    .like-filmatch-app-container button{
+        width: 300px;
+        height: 70px;
+    }
+
+    .free-app-wrapper {
+        height: 450px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20 0px;
+    }
+
+    .free-app-container h2 {
+        font-size: 40px;
+    }
+
+    .get-app {
+        margin-top: 35px;
+    }
+
+    .img-group {
+        height: 21vh;
+    }
+
+    .home-img {
+        left: 180px;
+        top: -40px;
+    }
+
+    .like-img {
+        right:270px;
+        top: -80px;
+    }
+
+    .ntfc-img {
+        right: 185px;
+        top: -40px;
+    }
+
+    .get-premium-img {
+        bottom: -35px;
+        left: 265px;
+    }
+
+    .rating-content {
+        gap: 60px;
+        padding: 60px;
+        grid-auto-flow: column;
+    }
+
+    .vector-download,
+    .vector-users {
+        bottom: -570px;
+    }
+
+    .vector-reviews,
+    .vector-countries {
+        bottom: -570px;
+    }
+
+    .reviews-header h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .card {
+        height: 238px !important;
+    }
+
+    .card-title {
+        padding: 20px 30px;
+    }
+
+    .reviews h5 {
+        font-size: 32px;
+        line-height: 22px;
+    }
+
+    .reviews p {
+        font-size: 32px;
+        line-height: 28px;
+        padding: 15px 20px;
+    }
+    
 }
