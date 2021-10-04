@@ -22,22 +22,27 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
       <div class="logo">
+        <div class="nav-links">
+          <a href="#!">Learn</a>
+          <a href="#!">Supports</a>
+        </div>
         <div class="logo-container">
           <span class="dot"></span>
           <span></span>
           <span></span>
           <img class="web-logo" src="./images/Group.png" alt="website logo" />
         </div>
-        <nav class="nav">
-          <ul class="nav-items">
-            <li>Learn</li>
-            <li>Supports</li>
-          </ul>
-        </nav>
       </div>
       <img class="header-back" src="./images/Mask Groupp.png" alt="" />
     </header>
@@ -47,18 +52,31 @@
         <div class="filmatch-app-container">
           <h3>Filmatch</h3>
           <p>If you're looking for soulmate, you need to be on Filmatch</p>
-          <button class="get-started-btn">Get Started</button>
+          <button class="get-started-btn btn">Get Started</button>
         </div>
       </div>
       <div class="like-filmatch-app-wrapper">
         <div class="like-filmatch-app-container">
           <h3>Why Choose A Dating App Like Filmatch?</h3>
           <p>
-            It doesn't matter if you want to find love, a date, or just have a
-            casual chat, you still want to find an app that's the right match
-            for you.
+            <span class="main-text">
+              It doesn't matter if you want to find love, a date, or just have a
+              casual chat, you still want to find an app that's the right match
+              for you.
+            </span>
+            <i class="fas fa-chevron-down chev"></i>
+            <span class="p-paragraph"
+              >And it's not always black and white — when you want to meet new
+              people, your friends at Filmatch can help you out with features
+              designed to make the impossible possible. Dating online just got
+              easier.</span
+            >
           </p>
-          <button class="jn-now-btn">Join Now</button>
+          <span class="paragraph"
+            >So we'll let you decide for yourself by giving you Filmatch at a
+            glance.</span
+          >
+          <button class="jn-now-btn btn">Join Now</button>
         </div>
       </div>
 
@@ -105,7 +123,7 @@
               src="./images/vector1.png"
               alt=""
             />
-            <h2>Total Downloads</h2>
+            <h2 class="total">Total Downloads</h2>
             <p>10 M</p>
           </div>
           <div class="active-users statistics">
@@ -202,9 +220,8 @@
       <footer>
         <div class="footer-content">
           <a href="#">Support</a>
-          <a href="#">Privacy</a>
-          <a href="#">Policy</a>
-          <img class="group-img" src="./images/footer.png" alt="" />
+          <a href="#">Privacy Policy</a>
+          <a href="#">Useful Links</a>
           <div class="social-app">
             <img
               class="available-apps"
@@ -217,6 +234,7 @@
               alt="get it on google play"
             />
           </div>
+          <img class="group-img" src="./images/footer.png" alt="" />
         </div>
       </footer>
     </div>

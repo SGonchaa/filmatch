@@ -28,8 +28,6 @@ blockquote {
     padding: 0;
 }
 
-
-
 body {
     background-color: var(--primarycolor);
     height: 100vh;
@@ -50,10 +48,12 @@ ul {
     position: relative;
     max-width: 1400px;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1400px;
     margin: 0 auto;
 }
+
 .header-back {
     position: absolute;
     right: 0;
@@ -214,6 +214,7 @@ ul {
 .img-group {
     height: 38vh;
     position: relative;
+    max-width: 564px;
 }
 
 .img-group img {
@@ -258,12 +259,12 @@ ul {
 
 .vector-download,
 .vector-users {
-    bottom: -245px;
+    bottom: -268px;
 }
 
 .vector-reviews,
 .vector-countries {
-    bottom: -433px;
+    bottom: -458px;
 }
 
 .rating-content h2 {
@@ -337,8 +338,6 @@ ul {
     padding: 10px 20px;
 }
 
-
-
 .swiper-wrapper .swiper-slide {
     height: 120px;
 
@@ -355,10 +354,6 @@ ul {
 
 
 }
-
-
-
-
 
 .reviews h5 {
     color: var(--primarycolor);
@@ -411,10 +406,33 @@ footer h5 {
     display: none;
 }
 
+.nav-links {
+    display: none;
+}
+
+.paragraph,
+.p-paragraph {
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.filmatch-app-wrapper,
+.like-filmatch-app-wrapper {
+    padding: 0 30px;
+}
+
+.like-filmatch-app-container .chev {
+    display: inline-block;
+}
 
 /* ***Media queries**** */
 
 @media screen and (min-width:768px) {
+    .like-filmatch-app-container .chev {
+        display: none;
+    }
 
     .filmatch-app-container h3 {
         font-size: 36px;
@@ -480,15 +498,13 @@ footer h5 {
         align-items: center;
     }
 
-
-
     .free-app-container h2 {
         font-size: 52px;
     }
 
     .vector-download,
     .vector-users {
-        bottom: -333px;
+        bottom: -363px;
     }
 
     .img-group {
@@ -523,18 +539,20 @@ footer h5 {
 
     .vector-reviews,
     .vector-countries {
-        bottom: -541px;
+        bottom: -570px;
     }
 
     .rating-content h2 {
         font-size: 32px;
     }
 
+    .rating-content .total {
+        font-size: 26px;
+    }
+
     .rating-content p {
         font-size: 34px;
     }
-
-
 
     .reviews-header {
         margin-bottom: 40px;
@@ -558,13 +576,9 @@ footer h5 {
         height: 190px !important;
     }
 
-
     .card-title {
         padding: 25px;
     }
-
-
-
 
     .reviews h5 {
         font-size: 32px;
@@ -596,6 +610,9 @@ footer h5 {
 }
 
 @media screen and (min-width:1024px) {
+    .like-filmatch-app-container .chev {
+        display: none;
+    }
 
     .header-back {
         display: none;
@@ -608,6 +625,33 @@ footer h5 {
     .filmatch-app-container p {
         font-size: 22px;
     }
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .nav-links a:nth-child(1) {
+        margin-right: 30px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 15px;
+    }
+
 
     .like-filmatch-app-container h3 {
         font-size: 32px;
@@ -624,6 +668,7 @@ footer h5 {
     .free-app-wrapper {
         height: 450px;
         flex-direction: row;
+        width: 92%;
         justify-content: space-between;
         padding: 0 15px;
     }
@@ -646,7 +691,7 @@ footer h5 {
     }
 
     .home-img {
-        left: 180px;
+        left: 119px;
         top: 81px;
     }
 
@@ -656,13 +701,13 @@ footer h5 {
     }
 
     .ntfc-img {
-        right: -9px;
-    top: 81px;
+        right: -22px;
+        top: 81px;
     }
 
     .get-premium-img {
         bottom: -55px;
-        left: 282px;
+        left: 235px;
     }
 
     .rating-content {
@@ -671,17 +716,16 @@ footer h5 {
         grid-auto-flow: column;
     }
 
-    .vector-download,
-    .vector-users {
-        bottom: 157px;
+    .rating-content .total {
+        font-size: 26px;
     }
 
     .vector-reviews,
-    .vector-countries {
-        bottom: 154px;
+    .vector-countries,
+    .vector-download,
+    .vector-users {
+        bottom: 165px;
     }
-
-    
 
     .reviews-header h1 {
         font-size: 42px;
@@ -715,18 +759,21 @@ footer h5 {
         margin-top: 5px;
     }
 
-
-
     .footer-content a {
         display: block;
         color: #fff;
         text-decoration: none;
     }
+
 }
 
 @media screen and (min-width:1280px) {
-    .header-back {
+    .like-filmatch-app-container .chev {
         display: none;
+    }
+
+    .filmatch-app-container {
+        margin-top: 20px;
     }
 
     .filmatch-app-container h3 {
@@ -734,109 +781,102 @@ footer h5 {
     }
 
     .filmatch-app-container p {
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 23px;
+        width: 16%;
     }
 
+    .filmatch-app-container button {
+        width: 15%;
+        font-size: 20px;
+    }
 
-    .filmatch-app-container button{
-        width: 300px;
-        height: 70px;
+    .like-filmatch-app-wrapper {
+        margin-top: 90px;
     }
 
     .like-filmatch-app-container h3 {
-        font-size: 20px;
-        margin-bottom: 34px;
-        margin-top: 145px;
+        font-size: 22px;
+        margin-top: 10px;
     }
 
     .like-filmatch-app-container p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 30px;
+        line-height: 1.4;
     }
 
-    .like-filmatch-app-container button{
-        width: 300px;
-        height: 70px;
+    .like-filmatch-app-container button {
+        font-size: 20px;
+        padding: 19px;
+        width: 15%;
+        margin-top: 57px;
     }
 
-    .free-app-wrapper {
-        height: 450px;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20 0px;
+    .paragraph,
+    .p-paragraph {
+        display: block;
     }
 
-    .free-app-container h2 {
-        font-size: 40px;
+    .paragraph {
+        font-size: 18px;
+        color: #fff;
     }
 
-    .get-app {
-        margin-top: 35px;
+    .p-paragraph {
+        width: 86%;
     }
 
-    .img-group {
-        height: 21vh;
+    .img-group img:not(:last-child) {
+        width: 130px;
+        height: 240px;
     }
 
     .home-img {
-        left: 180px;
-        top: -40px;
+        left: 167px;
+        top: 99px;
     }
 
     .like-img {
-        right:270px;
-        top: -80px;
+        right: 165px;
+        top: 30px;
     }
 
     .ntfc-img {
-        right: 185px;
-        top: -40px;
+        right: 65px;
+        top: 99px;
     }
 
     .get-premium-img {
-        bottom: -35px;
-        left: 265px;
+        bottom: -79px;
+        left: 277px;
     }
 
     .rating-content {
-        gap: 60px;
-        padding: 60px;
-        grid-auto-flow: column;
+        padding: 50px 0;
     }
 
-    .vector-download,
-    .vector-users {
-        bottom: -570px;
-    }
-
-    .vector-reviews,
-    .vector-countries {
-        bottom: -570px;
+    .reviews {
+        padding: 30px 50px;
     }
 
     .reviews-header h1 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 39px;
     }
 
-    .card {
-        height: 238px !important;
+    .rating-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .card-title {
-        padding: 20px 30px;
+    .round {
+        width: 150px;
+        height: 150px;
     }
 
-    .reviews h5 {
-        font-size: 32px;
-        line-height: 22px;
+    .vector {
+        bottom: -207px;
+        width: 63px;
+        height: 57px;
     }
-
-    .reviews p {
-        font-size: 32px;
-        line-height: 28px;
-        padding: 15px 20px;
-    }
-    
 }
+
