@@ -792,12 +792,12 @@ footer h5 {
     }
 
     .like-filmatch-app-wrapper {
-        margin-top: 90px;
+        margin-top: 40px;
     }
 
     .like-filmatch-app-container h3 {
         font-size: 22px;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .like-filmatch-app-container p {
@@ -808,7 +808,7 @@ footer h5 {
         font-size: 20px;
         padding: 19px;
         width: 15%;
-        margin-top: 57px;
+        margin-top: 30px;
     }
 
     .paragraph,
@@ -830,24 +830,30 @@ footer h5 {
         height: 240px;
     }
 
+    .vector-reviews,
+    .vector-countries,
+    .vector-download,
+    .vector-users {
+        top: 1250px;
+    }
+
     .home-img {
-        left: 167px;
-        top: 99px;
+        left: 150px;
+        top: -40px;
     }
 
     .like-img {
-        right: 165px;
-        top: 30px;
+        left: 250px;
+        top: -90px;
     }
 
     .ntfc-img {
-        right: 65px;
-        top: 99px;
+        left: 350px;
+        top: -40px;
     }
 
     .get-premium-img {
-        bottom: -79px;
-        left: 277px;
+        left: 255px;
     }
 
     .rating-content {
