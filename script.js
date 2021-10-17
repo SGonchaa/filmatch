@@ -7,6 +7,7 @@ const linkList = document.querySelectorAll(".list-link");
 const element = document.querySelector(".wrapper");
 const freeContainer = document.querySelector(".free-app-container");
 const imgGroup = document.querySelector(".img-group"); 
+const reviewsHeader = document.querySelector(".reviews-header");
 const footerContent = document.querySelector(".footer-content");
 const chevron = document.querySelector(".chev");
 const paragraph = document.querySelector(".p-paragraph");
@@ -14,27 +15,6 @@ const paragraph = document.querySelector(".p-paragraph");
 
 chevron.addEventListener("click", () => {
   paragraph.classList.toggle("show");
-});
-
-
-//*slider
-let swiper = new Swiper(".mySwiper", {
-  slidesperView: 1,
-  spaceBetween: 20,
-  grabCursor: true,
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-
-    1280: {
-      slidesPerView: 3,
-    },
-  },
 });
 
 //*click design
@@ -64,7 +44,6 @@ const observer1 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("animate__animated", "animate__fadeIn");
-      element.style.setProperty("--animate-duration", "2s");
     } else {
       entry.target.classList.remove("animate__animated", "animate__fadeIn");
     }
@@ -78,9 +57,9 @@ myObserver.observe(element);
 const observer2 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__rubberBand");
+      entry.target.classList.add("animate__animated", "animate__wobble");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__rubberBand");
+      entry.target.classList.remove("animate__animated", "animate__wobble");
     }
   });
 };
@@ -92,9 +71,9 @@ myObserver2.observe(navLinks);
 const observer3 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__headShake");
+      entry.target.classList.add("animate__animated", "animate__zoomIn");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__headShake");
+      entry.target.classList.remove("animate__animated", "animate__zoomIn");
     }
   });
 };
@@ -106,9 +85,9 @@ myObserver3.observe(startedBtn);
 const observer4 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__headShake");
+      entry.target.classList.add("animate__animated", "animate__zoomIn");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__headShake");
+      entry.target.classList.remove("animate__animated", "animate__zoomIn");
     }
   });
 };
@@ -120,9 +99,9 @@ myObserver4.observe(joinBtn);
 const observer5 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__pulse");
+      entry.target.classList.add("animate__animated", "animate__swing");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__pulse");
+      entry.target.classList.remove("animate__animated", "animate__swing");
     }
   });
 };
@@ -134,9 +113,9 @@ myObserver5.observe(freeContainer);
 const observer6 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__pulse");
+      entry.target.classList.add("animate__animated", "animate__swing");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__pulse");
+      entry.target.classList.remove("animate__animated", "animate__swing");
     }
   });
 };
@@ -148,9 +127,9 @@ myObserver6.observe(imgGroup);
 const observer7 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__animated", "animate__fadeInRight");
+      entry.target.classList.add("animate__animated", "animate__slideInLeft");
     } else {
-      entry.target.classList.remove("animate__animated", "animate__fadeInRight");
+      entry.target.classList.remove("animate__animated", "animate__slideInLeft");
     }
   });
 };
@@ -158,11 +137,35 @@ const observer7 = (entries) => {
 const myObserver7 = new IntersectionObserver(observer7);
 myObserver7.observe(footerContent);
 
+//****8*/
+const observer8 = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate__animated", "animate__slideInLeft");
+    } else {
+      entry.target.classList.remove("animate__animated", "animate__slideInLeft");
+    }
+  });
+};
 
+const myObserver8 = new IntersectionObserver(observer8);
 
+//*slider
+let swiper = new Swiper(".mySwiper", {
+  slidesperView: 1,
+  spaceBetween: 20,
+  grabCursor: true,
 
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
 
-
-
-
-
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+});
